@@ -1,0 +1,22 @@
+
+<h1> this is a user input page </h1>
+
+
+<form action="" method="POST">
+     {% csrf_token %} 
+{{ my_user_input.as_p }}
+<button type="submit"> Save </button>
+
+</form>
+<h1>{{msg}}</h1>
+ {% if msg == 'Data is saved' %}
+
+ {{my_user_input.strip }}
+
+{% endif %}
+
+
+<!-- if my_user_input.is_valid():
+ my_user_input.cleaned_data['name'].strip() 
+ my_user_input.cleaned_data['date'] = ''
+  my_user_input.cleaned_data['description']= '' -->
